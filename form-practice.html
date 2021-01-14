@@ -9,18 +9,73 @@
 
 <body>
     <h1>Form Demo lol</h1>
+    <h2>General</h2>
     <form>
         <input type='text' placeholder='Username'>
-        <input type='password' placeholder='password'>
+        <input type='text' placeholder='password'>
         <label for='cheese'>Do you like cheese?</label>
         <input id='cheese' type='checkbox'>
     </form>
-
+    <h2>Reddit Search</h2>
     <form action='https://www.reddit.com/search'>
         <input type="text" name='q'>
         <button>Search Reddit</button>
     </form>
-
+    <h2>Meal Selection</h2>
+    <form>
+        <label for='meal'>Select something to Eat</label>
+        <select name='meal' id='meal'>
+            <option value='steak'>Steak</option>
+            <option value='hamburger'>Hamburger</option>
+            <option value='tacos'>Tacos</option>
+        </select>
+    </form>
+    <h2>Range</h2>
+    <form action='/search/'>
+        <label for="cheese">Cheese Level:</label>
+        <input id='cheese' name='cheese' type='range' min='0' max='10000'>
+        <button type='submit'>Send the Cheese</button>
+    </form>
+    <h2>Race Registration!</h2>
+    <form action='/search'>
+        <div>
+            <label for="first">First Name</label>
+            <input type="text" id='first' name='first'>
+            <label for="last">Last Name</label>
+            <input type="text" id='last' name='last'>
+        </div>
+        <div>
+            <p for='race'>Select a Race:</p>
+            <div>
+                <input type="radio" id='5k' name='race' value="5k">
+                <label for="5k">Fun Run 5k</label>
+            </div>
+            <div>
+                <input type="radio" id='HM' name='race' value='HM'>
+                <label for="HM">Half Marathon</label>
+            </div>
+            <div>
+                <input type="radio" id='FM' name='race' value='FM'>
+                <label for="FM">Full Marathon</label>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id='email' name='email' required>
+                <label for="password">Password</label>
+                <input type="password" id='password' name='password' required>
+            </div>
+            <div>
+                <label for='age'>Select an Age Group</label>
+                <select id='age' name='age'>
+                    <option value="under18">Under 18</option>
+                    <option value="18-25">18-25</option>
+                    <option value='26-64'>26-65</option>
+                    <option value="65+">65+</option>
+                </select>
+            </div>
+            <button type='submit'>Let's Go Racing!</button>
+        </div>
+    </form>
 </body>
 
 </html>
