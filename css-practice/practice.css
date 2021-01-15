@@ -36,10 +36,23 @@ button:hover {
     width: 50px;
     background-color: blue;
     margin-top: 10px;
-    transition: margin-left 2s, transform 2s;
+    transition: margin-left 2s, transform 2s, background-color 2s;
 }
 
  section:hover #box {
     margin-left: 500px;
     transform: rotate(1080deg);
+    background-color: blueviolet;
+}
+
+#box:nth-of-type(1) {
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#box:nth-of-type(2) {
+    transition-timing-function: ease-in;
+}
+
+#box:nth-of-type(3) {
+    transition-timing-function: cubic-bezier(.48,-0.56,.59,1.47);
 }
