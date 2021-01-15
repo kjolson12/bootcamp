@@ -12,3 +12,34 @@ h1 {
 p {
     line-height: 2;
 }
+
+div {
+    font-size: 25px;
+}
+
+button {
+    background-color: limegreen;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 2em;
+    font-weight: 600;
+    font-size: 0.5em;
+}
+
+button:hover {
+    background-color: rgb(43, 180, 43);
+}
+
+#box {
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    margin-top: 10px;
+    transition: margin-left 2s, transform 2s;
+}
+
+ section:hover #box {
+    margin-left: 500px;
+    transform: rotate(1080deg);
+}
