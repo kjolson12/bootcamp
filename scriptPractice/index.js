@@ -28,3 +28,15 @@ minusButton.addEventListener('click', subtractOne);
 clearButton.addEventListener('click', clear);
 
 displayCount.innerHTML = count;
+
+// die practice
+
+const rollButton = document.getElementById('rollButton');
+const displayDie = document.getElementById('displayDie');
+
+const rollDie = () => {
+    const value = Math.floor(Math.random() * 6) + 1;
+    displayDie.innerHTML = value;
+};
+
+rollButton.addEventListener('click', rollDie);
