@@ -3,13 +3,19 @@ const randomRBG = () => {
 }
 
 const generateColor = () => {
-    return `rgb(${randomRBG()}, ${randomRBG()}, ${randomRBG()})`;
+    return `RGB(${randomRBG()}, ${randomRBG()}, ${randomRBG()})`;
 }
 
 const bodyBackground = document.querySelector('body');
+const h2 = document.querySelector('h2');
+const h1 = document.querySelector('h1');
 
 const setBackground = () => {
-    bodyBackground.style.backgroundColor = generateColor();
+    const color = generateColor();
+    bodyBackground.style.backgroundColor = color;
+    h2.innerHTML = color;
+    h2.style.color = 'white';
+    h1.style.color = 'white';
 }
 
 const mainButton = document.querySelector('#mainButton');
