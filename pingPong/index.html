@@ -13,29 +13,37 @@
 <body>
     <div class="container">
         <div class="row">
-            <h1 class="text-center display-1">Scoreboard</h1>
+            <h1 class="text-center display-1 mt-5">Scoreboard</h1>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class='scoreboard col-5'>
-                        <h2 class="text-center p-5 display-5">0 to 0</h2>
+                    <div class='scoreboard col-11 col-md-5'>
+                        <h2 class="text-center p-5">
+                            <span id='player1ScoreSlot'>0</span>
+                            to
+                            <span id='player2ScoreSlot'>0</span>
+                        </h2>
                         <p>Use the buttons below to keep score.</p>
                         <div class="row">
-                            <label for='selectScoreLimit' class='col-3 col-form-label'>
+                            <label for='selectScoreLimit' class='col-4 col-lg-3 col-form-label'>
                                 Playing to
                             </label>
                             <div class='col-3'>
                                 <select id='selectScoreLimit' class="form-select">
-                                    <option selected value='7'>7</option>
-                                    <option value="11">11</option>
-                                    <option value="21">21</option>
+                                    <option id='option7' selected value='7'>7</option>
+                                    <option id='option11' value="11">11</option>
+                                    <option id='option21' value="21">21</option>
                                 </select>
                             </div>
                         </div>
                         <div class="text-center my-5">
                             <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-primary">+1 Player One</button>
-                                <button type="button" class="btn btn-secondary">+1 Player Two</button>
-                                <button type="button" class="btn btn-danger">Reset</button>
+                                <button type="button" class="btn btn-primary" id='playerOneButton'>
+                                    +1 Player One
+                                </button>
+                                <button type="button" class="btn btn-secondary" id='playerTwoButton'>
+                                    +1 Player Two
+                                </button>
+                                <button type="button" class="btn btn-danger" id=resetButton>Reset</button>
                             </div>
                         </div>
                     </div>
