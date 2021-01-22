@@ -22,10 +22,8 @@ const enableButtons = () => {
 };
 
 const removeColors = () => {
-    player1ScoreSlot.classList.remove('winner');
-    player1ScoreSlot.classList.remove('loser');
-    player2ScoreSlot.classList.remove('winner');
-    player2ScoreSlot.classList.remove('loser');
+    player1ScoreSlot.classList.remove('winner', 'loser');
+    player2ScoreSlot.classList.remove('winner', 'loser');
 };
 
 const checkGameOver = () => {
